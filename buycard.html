@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/slick.css" />
+   <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="jquery-ui.min.js"></script>
+
+
+
+   <title>Benity for love</title>
+</head>
+
+<body>
+
+
+   <header class="header__wrapper ">
+      <header class="header ">
+         <div class="container">
+            <div class="header__inner ">
+               <button class="header__call">
+                  <img src="img/header/phone.svg" alt="">
+               </button>
+               <div class="header__likes">
+                  <a href="" class="header__likes-img">
+                     <img src="img/header/like.svg" alt="">
+                  </a>
+                  <div class="header__count count-likes">
+                     10
+                  </div>
+                  <a href="" class="header__likes-text">
+                     Список желаний
+                  </a>
+               </div>
+               <a href="buycard.html" class="header__choice">
+                  Мои заказы
+               </a>
+               <a href="index.html" class="header__logo">
+                  <img src="img/header/logo.svg" alt="">
+               </a>
+               <div class="header__search">
+                  <div class="header__search-inner">
+                     <input placeholder="поиск..." type="search">
+                     <button class="header__search-icon">
+                        <img src="img/header/search.svg" alt="">
+                     </button>
+                  </div>
+               </div>
+               <a href="buycard.html" class="header__card">
+                  <div class="header__card-img">
+                     <img src="img/header/card.svg" alt="">
+                     <div class="header__count count-card">
+                        10
+                     </div>
+                  </div>
+
+                  <div class="header__card-price">
+                     <div class="header__card-price-numb">
+                        2,596
+                     </div>
+                     <div class="header__card-price-text">
+                        byn
+                     </div>
+                  </div>
+               </a>
+
+
+               <button type="button" class="burger ">
+                  <div class="burger__item"></div>
+               </button>
+
+            </div>
+         </div>
+      </header>
+
+      <nav class="nav mainnav ">
+         <div class="container">
+            <div class="nav__links">
+               <a href="catalog.html" class="nav__link">Новинки</a>
+               <a href="catalog.html" class="nav__link">Нижнее белье</a>
+               <a href="catalog.html" class="nav__link">бюстгалтеры</a>
+               <a href="catalog.html" class="nav__link">пижамы</a>
+               <a href="catalog.html" class="nav__link">hot night</a>
+               <a href="catalog.html" class="nav__link">Пляж</a>
+               <a href="catalog.html" class="nav__link">аксессуары</a>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+   <section class="main">
+      <div class="container">
+         <div class="main__nav">
+            <div class="main__nav-links nav-card">
+               <div class="main__nav-links-inner">
+                  <a href="index.html" class="main__nav-link">Главная</a>
+                  <a href="catalog.html" class="main__nav-link">Корзина</a>
+               </div>
+
+               <a href="catalog.html" class="main__nav-link-backtocatalog">
+                  Вернуться в каталог
+               </a>
+
+
+            </div>
+         </div>
+
+
+
+         <div class="main__content buycard">
+            <div class="main__buycard">
+               <div class="buycard__inner">
+                  <div class="buycard__left">
+                     <div class="buycard__left-inner">
+                        <div class="buycard__item">
+                           <div class="buycard__item-img">
+                              <img src="img/buycard/1.jpg" alt="">
+                           </div>
+                           <div class="buycard__item-text">
+                              <h2 class="buycard__item-title">
+                                 Бюстгалтер Enify bp плотная чашка балконет
+                              </h2>
+                              <p class="buycard__item-articul">
+                                 Артикул: 191809
+                              </p>
+                              <p class="buycard__item-size">
+                                 Размер: S
+                              </p>
+                              <div class="buycard__item-bottom">
+                                 <div class="buycard__item-count">
+                                    <button onclick="minus(1)" type="button" class="buycard__count-decrease"></button>
+                                    <!-- <input id="col_1" value="1" class="buycard__count" type="text"> -->
+                                    <div id="col_1" class="buycard__count">1</div>
+                                    <button onclick="plus(1)" type="button" class="buycard__count-increase">
+                                    </button>
+                                 </div>
+                                 <div class="buycard__item-price">
+                                    <div class="main__card-price">
+
+                                       <div id="cena_1" class="main__item-priceold priceincart">
+                                          135
+                                       </div>
+                                       <div id="cenap_1" class="main__item-pricenew">
+                                          135
+                                       </div>
+                                       <div class="main__item-pricebyn">
+                                          BYN
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                           <button type="button" class="buycard__delete">
+                              <img src="img/buycard/close.svg" alt="">
+                           </button>
+                        </div>
+                        <div class="buycard__item">
+                           <div class="buycard__item-img">
+                              <img src="img/buycard/2.jpg" alt="">
+                           </div>
+                           <div class="buycard__item-text">
+                              <h2 class="buycard__item-title">
+                                 Аксессуар из коллекции HOT NIGHT кошачий взгляд
+                              </h2>
+                              <p class="buycard__item-articul">
+                                 Артикул: 191809
+                              </p>
+                              <p class="buycard__item-size">
+                                 Размер: S
+                              </p>
+                              <div class="buycard__item-bottom">
+                                 <div class="buycard__item-count">
+                                    <button onclick="minus(2)" type="button" class="buycard__count-decrease"></button>
+                                    <!-- <input id="col_1" value="1" class="buycard__count" type="text"> -->
+                                    <div id="col_2" class="buycard__count">1</div>
+                                    <button onclick="plus(2)" type="button" class="buycard__count-increase">
+                                    </button>
+                                 </div>
+                                 <div class="buycard__item-price">
+                                    <div class="main__card-price">
+
+                                       <div id="cena_2" class="main__item-priceold priceincart">
+                                          60
+                                       </div>
+                                       <div id="cenap_2" class="main__item-pricenew">
+                                          60
+                                       </div>
+                                       <div class="main__item-pricebyn">
+                                          BYN
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                           <button type="button" class="buycard__delete">
+                              <img src="img/buycard/close.svg" alt="">
+                           </button>
+                        </div>
+                        <div class="buycard__item">
+                           <div class="buycard__item-img">
+                              <img src="img/buycard/3.jpg" alt="">
+                           </div>
+                           <div class="buycard__item-text">
+                              <h2 class="buycard__item-title">
+                                 Боди Enify bp плотная чашка балконет
+                              </h2>
+                              <p class="buycard__item-articul">
+                                 Артикул: 191809
+                              </p>
+                              <p class="buycard__item-size">
+                                 Размер: S
+                              </p>
+                              <div class="buycard__item-bottom">
+                                 <div class="buycard__item-count">
+                                    <button onclick="minus(3)" type="button" class="buycard__count-decrease"></button>
+                                    <!-- <input id="col_1" value="1" class="buycard__count" type="text"> -->
+                                    <div id="col_3" class="buycard__count">1</div>
+                                    <button onclick="plus(3)" type="button" class="buycard__count-increase">
+                                    </button>
+                                 </div>
+                                 <div class="buycard__item-price">
+                                    <div class="main__card-price">
+
+                                       <div id="cena_3" class="main__item-priceold priceincart">
+                                          80
+                                       </div>
+                                       <div id="cenap_3" class="main__item-pricenew">
+                                          80
+                                       </div>
+                                       <div class="main__item-pricebyn">
+                                          BYN
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                           </div>
+                           <button type="button" class="buycard__delete">
+                              <img src="img/buycard/close.svg" alt="">
+                           </button>
+                        </div>
+                     </div>
+                     <div class="buycard__sum">
+                        <p class="buycard__sum-text">
+                           Сумма заказа:
+                        </p>
+                        <p class="buycard__sum-count">
+                           <span id="itog" class="main__item-pricenew">
+
+                           </span>
+                           <span class="main__item-pricebyn">
+                              BYN
+                           </span>
+                        </p>
+                     </div>
+
+                  </div>
+                  <div class="buycard__right">
+                     <h2 class="buycard__right-title">
+                        Укажите адрес доставки:
+                     </h2>
+                     <div class="buycard__right-inner">
+                        <div class="buycard__right-wrapper">
+
+                           <div class="buycard__city">
+                              <h3>Город</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+
+                           </div>
+                           <div class="buycard__street">
+                              <h3>Улица</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+                           </div>
+                        </div>
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__corp">
+                              <h3>Дом, корпус</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                           <div class="buycard__appart">
+                              <h3>Квартира</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                        </div>
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__surname">
+                              <h3>Фамилия</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                           <div class="buycard__name">
+                              <h3>Имя</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                        </div>
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__phone">
+                              <h3>Телефон</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                        </div>
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__email">
+                              <h3>E-mail</h3>
+                              <input required placeholder="Заполните поле" class="buycard__input" type="text">
+
+                           </div>
+                        </div>
+
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__promo">
+                              <h3>Есть промокод?</h3>
+                              <input value="" required placeholder="Заполните поле" class="buycard__input " type="text">
+
+                           </div>
+                        </div>
+                        <div class="buycard__right-wrapper">
+                           <div class="buycard__pay ">
+                              <h3>Оплата</h3>
+                              <button class="buycard__pay-btn ">
+                                 <ul>
+                                    <li class="activepayli">Наличными</li>
+                                    <li>Кредитной Картой</li>
+                                    <li>Биткоин кошелек</li>
+                                    <li>Киви и другие кошельки
+                                    </li>
+                                    <li>Кредитной Картой</li>
+                                 </ul>
+                              </button>
+                           </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+                     </div>
+                     <button type="button" class="btn buycard__submitbtn">
+                        Оформить
+                     </button>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+         </div>
+
+
+
+
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+
+            <div class="footer__left">
+               <div class="footer__links">
+                  <div class="footer__links-left">
+                     <a href="" class="footer__link">Новинки</a>
+                     <a href="" class="footer__link">Нижнее белье</a>
+                     <a href="" class="footer__link">Бюстгалтеры</a>
+                     <a href="" class="footer__link">Пижамы</a>
+                     <a href="" class="footer__link">HOT NIGHT</a>
+                     <a href="" class="footer__link">Пляж</a>
+                     <a href="" class="footer__link">Аксессуары</a>
+                  </div>
+
+                  <div class="footer__links-right">
+                     <a href="" class="footer__link">Обратная связь</a>
+                     <a href="" class="footer__link">Способы доставки</a>
+                     <a href="" class="footer__link">Как вернуть товар</a>
+                     <a href="" class="footer__link">Где нас найти</a>
+                     <a href="" class="footer__link">Подарочные сертификаты</a>
+                     <a href="" class="footer__link">Популярные вопросы</a>
+                     <a href="" class="footer__link">Блог</a>
+                  </div>
+
+
+
+               </div>
+
+
+
+            </div>
+
+
+            <div class="footer__right">
+               <div class="footer__notification">
+                  Уведомлять о скидках
+               </div>
+               <form action="" class="footer__form">
+
+                  <input placeholder="Введите E-mail" type="text">
+
+                  <button type="button" class="footer__btn">
+                     <img src="img/footer/telegram.svg" alt="">
+                  </button>
+               </form>
+               <div class="footer__social">
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/instagram.svg" alt="">
+                  </a>
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/facebook.svg" alt="">
+                  </a>
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/vk.svg" alt="">
+                  </a>
+               </div>
+               <div class="footer__adress">
+                  <p>ТЦ Замок, пр-т Победителей 65, Минск</p>
+                  <p>Работаем ежедневно с 10:00 до 22:00</p>
+                  <p>+37529 789-01-25</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </footer>
+
+</body>
+<script src="slick.js"></script>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,365 @@
+.filter {
+   background-color: #fff;
+
+   &__menu {
+      position: relative;
+      margin-bottom: 14px;
+      @media (max-width: 575px) {
+         border-bottom: 1px solid #ffedf2;
+      }
+      .filter__menubtnopen {
+         border: 0;
+         font: inherit;
+         background: 0;
+         padding: 0;
+
+         font-weight: 500;
+         font-size: 18px;
+         color: $redLL;
+         margin-bottom: 10px;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+
+         cursor: pointer;
+
+         img {
+            display: block;
+            width: 14px;
+            height: 14px;
+         }
+         @media (max-width: 575px) {
+            justify-content: center;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            font-weight: 300;
+
+            img {
+               margin-left: 10px;
+               display: none;
+            }
+         }
+         &.openedmenu {
+            img {
+               transform: rotate(180deg);
+            }
+         }
+      }
+     
+
+      &.menumaxh {
+         max-height: 137px;
+         overflow: hidden;
+         margin-bottom: 14px;
+         .filter__menumaxhbtns {
+            .filter__menumaxbtn {
+               &:first-child {
+                  display: none;
+               }
+               &:last-child {
+                  display: block;
+               }
+            }
+         }
+      }
+   }
+
+   &__menu-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+
+   &__menu-namecat {
+      font-weight: 500;
+      font-size: 18px;
+      color: $redLL;
+      margin-bottom: 10px;
+      display: block;
+      @media (max-width: 575px) {
+         font-weight: 300;
+         text-align: center;
+      }
+   }
+
+   &__menu-items {
+      padding: 0 10px;
+
+      flex-direction: column;
+      display: none;
+      @media (max-width: 575px) {
+         max-width: 300px;
+         margin: 0 auto;
+         text-align: center;
+      }
+   }
+
+   &__input-btn {
+      background: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-weight: 300;
+      font-size: 15px;
+      color: #000;
+      position: relative;
+      text-decoration-color: transparent;
+      margin-bottom: 10px;
+      &.inputactivebtn {
+         text-decoration-color: $redLL;
+         color: $redLL;
+      }
+      @media (max-width: 575px) {
+      }
+   }
+}
+
+.filter {
+   &__menu {
+      .filter__menu-itemcheck {
+         margin-bottom: 10px;
+      }
+      .filter__checkbox-other {
+         display: block;
+         cursor: pointer;
+         user-select: none;
+         position: relative;
+         @media (max-width: 575px) {
+            max-width: 200px;
+            margin: 0 auto;
+         }
+      }
+      .filter__checkbox-other input[type="checkbox"] {
+         position: absolute;
+         z-index: -1;
+         opacity: 0;
+         display: block;
+         width: 0;
+         height: 0;
+      }
+      .filter__checkbox-other span {
+         display: inline-block;
+         position: relative;
+         padding: 0 0 0 25px;
+         font-weight: 300;
+         font-size: 15px;
+         color: #000;
+      }
+      .filter__checkbox-other span:before {
+         content: "";
+         display: inline-block;
+         width: 15px;
+         height: 15px;
+         position: absolute;
+         left: 0;
+         top: 1px;
+         border: 1.5px solid #dadada;
+      }
+
+      /* Checked */
+      .filter__checkbox-other input[type="checkbox"] + span:after {
+         content: "";
+         opacity: 0;
+         transition: opacity 0.3s ease;
+      }
+      .filter__checkbox-other input[type="checkbox"]:checked + span:after {
+         display: inline-block;
+         width: 13px;
+         height: 13px;
+         position: absolute;
+         left: 4px;
+         top: -2px;
+         background: url("../img/filter/inputcheck.svg") 0 0 no-repeat;
+         opacity: 1;
+      }
+      .filter__checkbox-other input[type="checkbox"]:checked + span:before {
+         border: 1.5px solid $redLLL;
+      }
+
+      .filter__checkbox-other {
+         &.filter__input-uncheck {
+            &:before {
+               border: 1.5px solid #dadada;
+            }
+            &:after {
+               opacity: 0;
+            }
+         }
+      }
+   }
+}
+
+.filter {
+   &__menumaxh {
+      margin-bottom: 25px;
+   }
+   &__menumaxhbtns {
+      border: 0;
+      padding: 0;
+      font: inherit;
+      background: 0;
+      a {
+         &:last-child {
+            display: none;
+         }
+      }
+
+      &.morebtnunshow {
+         a {
+            &:first-child {
+               display: none;
+            }
+            &:last-child {
+               display: block;
+            }
+         }
+      }
+      @media (max-width: 575px) {
+         width: 100%;
+         text-align: center;
+      }
+   }
+   &__menumaxhbtn {
+      font-weight: 300;
+      font-size: 15px;
+      color: #7a7a7a;
+      text-decoration-color: #7a7a7a;
+      cursor: pointer;
+   }
+}
+.filter {
+   &__menu-slider {
+      max-width: 250px;
+      margin-bottom: 12px;
+      margin-top: 15px;
+      @media (max-width: 575px) {
+         margin: 15px auto 12px auto;
+      }
+      .ui-widget.ui-widget-content {
+         border: 0;
+      }
+      .ui-slider {
+         border-radius: 53px;
+         background-color: #fff;
+         height: 8px;
+         box-shadow: 0 1px 4px rgba(#000, 0.15);
+      }
+      .ui-state-default {
+         border: 4px solid $redLL;
+         background-color: #fff;
+         border-radius: 50%;
+         box-shadow: -1px 0 4px rgba($redLL, 0.7), 0 1px 4px rgba(#000, 0.25);
+      }
+      .ui-widget-header {
+         background-color: $redLLL;
+      }
+   }
+
+   &__menu-slider-text {
+      display: flex;
+      .filter__menu-slider-input {
+         font-weight: 300;
+         font-size: 15px;
+         color: #000;
+      }
+      input {
+         display: block;
+         border: 0;
+         border-radius: 15px;
+         width: 46px;
+         height: 22px;
+         background-color: #fff;
+         box-shadow: inset 1px 1px 4px #dadada;
+
+         text-align: center;
+         font: inherit;
+         margin-right: 40px;
+         &:last-child {
+            margin-right: 0;
+         }
+         &:focus {
+            outline: 1px solid $redLLL;
+         }
+      }
+   }
+}
+.filter__menubtn {
+   width: 100%;
+   height: 53px;
+   cursor: pointer;
+   position: relative;
+   border-radius: 50px;
+   border: 1px solid $redLL;
+   margin-bottom: 15px;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   .filter__menubtn-text {
+      color: #fff;
+      font-weight: 300;
+      font-size: 18px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      z-index: 1;
+      pointer-events: none;
+      transition: all 0.2s ease-out;
+      &.btn-apply {
+         color: #fff;
+      }
+      &.btn-clear {
+         color: #000;
+      }
+   }
+   &:hover {
+      border: 1px solid $redLLL;
+      input {
+         background-color: $redLLL;
+      }
+      .filter__menubtn-text {
+         color: #fff;
+      }
+   }
+
+   input {
+      cursor: pointer;
+      &:active {
+         background-color: $redLL;
+         box-shadow: inset 1px 3px 5px rgba(#000, 0.25);
+      }
+   }
+}
+.filter__btn {
+   padding: 0;
+   border: 0;
+   font: inherit;
+   background: 0;
+
+   width: 100%;
+   min-width: 100%;
+   height: 100%;
+
+   border-radius: 50px;
+
+   transition: all 0.2s ease-out;
+   &.inputapply {
+      background-color: $redLL;
+   }
+   &.inputclear {
+      color: #000;
+   }
+}
+
+.filter__menu-items {
+   display: none;
+   &.menuopened {
+      display: flex;
+   }
+}

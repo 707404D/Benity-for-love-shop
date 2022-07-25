@@ -1,0 +1,88 @@
+.main {
+   margin-bottom: 70px;
+   background-color: #f9f9f9;
+   &.mainindex {
+      background-color: #fff;
+   }
+   &__content {
+      padding: 0 130px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f9f9f9;
+      &.mainindexcontent {
+         background-color: #fff;
+      }
+      .main__filter-formobinner {
+         background-color: #fff;
+         padding: 25px 30px;
+         box-shadow: 0 2px 9px rgba(#000, 0.1);
+
+         width: 21%;
+         border-radius: 15px;
+
+         height: 100%;
+
+         @media (max-width: 989px) {
+            padding: 10px 15px;
+         }
+         @media (max-width: 767px) {
+            width: 30%;
+         }
+         @media (max-width: 575px) {
+            width: 100%;
+            margin-bottom: 60px;
+         }
+      }
+      .main__filterformobtex {
+         display: none;
+         @media (max-width: 575px) {
+            cursor: pointer;
+            display: block;
+            font-family: "SFProDisplay";
+            font-size: 17px;
+            font-weight: 300;
+            color: #ff6b8e;
+            width: 100%;
+            padding: 12px 0;
+            text-align: center;
+            border: 1px solid #ff6b8e;
+            margin-bottom: 15px;
+            border-radius: 30px;
+            position: relative;
+            &:after {
+               content: "";
+               width: 15px;
+               height: 15px;
+               background: url("../img/filter/filterarrow.svg") center no-repeat;
+               position: absolute;
+               top: 50%;
+               right: 50px;
+               transform: translateY(-50%);
+            }
+            &.activefilterbtn {
+               &:after {
+                  transform: translateY(-50%) rotate(180deg);
+               }
+            }
+         }
+      }
+
+      .main__filter {
+         width: 100%;
+         @media (max-width: 575px) {
+            border: 1px solid #ff6b8e;
+            border-radius: 30px;
+            padding: 15px;
+         }
+         &.mobilefilter {
+            display: none;
+         }
+      }
+      @media (max-width: 1200px) {
+         padding: 0;
+      }
+      @media (max-width: 1100px) {
+         flex-wrap: wrap;
+      }
+   }
+}

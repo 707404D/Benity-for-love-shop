@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="jquery-ui.min.js"></script>
+
+
+
+   <title>Benity for love</title>
+</head>
+
+<body>
+
+
+   <header class="header__wrapper ">
+      <header class="header ">
+         <div class="container">
+            <div class="header__inner ">
+               <button class="header__call">
+                  <img src="img/header/phone.svg" alt="">
+               </button>
+               <div class="header__likes">
+                  <a href="" class="header__likes-img">
+                     <img src="img/header/like.svg" alt="">
+                  </a>
+                  <div class="header__count count-likes">
+                     10
+                  </div>
+                  <a href="" class="header__likes-text">
+                     Список желаний
+                  </a>
+               </div>
+               <a href="buycard.html" class="header__choice">
+                  Мои заказы
+               </a>
+               <a href="index.html" class="header__logo">
+                  <img src="img/header/logo.svg" alt="">
+               </a>
+               <div class="header__search">
+                  <div class="header__search-inner">
+                     <input placeholder="поиск..." type="search">
+                     <button class="header__search-icon">
+                        <img src="img/header/search.svg" alt="">
+                     </button>
+                  </div>
+               </div>
+               <a href="buycard.html" class="header__card">
+                  <div class="header__card-img">
+                     <img src="img/header/card.svg" alt="">
+                     <div class="header__count count-card">
+                        10
+                     </div>
+                  </div>
+
+                  <div class="header__card-price">
+                     <div class="header__card-price-numb">
+                        2,596
+                     </div>
+                     <div class="header__card-price-text">
+                        byn
+                     </div>
+                  </div>
+               </a>
+
+
+               <button type="button" class="burger ">
+                  <div class="burger__item"></div>
+               </button>
+
+            </div>
+         </div>
+      </header>
+
+      <nav class="nav mainnav ">
+         <div class="container">
+            <div class="nav__links">
+               <a href="catalog.html" class="nav__link">Новинки</a>
+               <a href="catalog.html" class="nav__link">Нижнее белье</a>
+               <a href="catalog.html" class="nav__link">бюстгалтеры</a>
+               <a href="catalog.html" class="nav__link">пижамы</a>
+               <a href="catalog.html" class="nav__link">hot night</a>
+               <a href="catalog.html" class="nav__link">Пляж</a>
+               <a href="catalog.html" class="nav__link">аксессуары</a>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+
+   <section class="main">
+      <div class="container">
+         <div class="main__nav">
+            <div class="main__nav-links">
+               <a href="index.html" class="main__nav-link">Главная</a>
+               <a href="catalog.html" class="main__nav-link">Новинки</a>
+               <a href="catalog.html" class="main__nav-link">Боди</a>
+            </div>
+         </div>
+
+
+
+         <div class="main__content filter filterslider filterclear cards">
+            <div class="main__filter-formobinner">
+               <span class="main__filterformobtex">
+                  Фильтр
+               </span>
+               <div class="main__filter">
+
+                  <div id="menuopened_1" class="filter__menu">
+                     <button id="menubtn_1" class="filter__menubtnopen ">Новинки
+                        <img src="img/filter/filterarrow.svg" alt="">
+                     </button>
+                     <div id="filtermenuitems_1" class="filter__menu-items">
+                        <a href="#" class=" filter__input-btn">Нижнее белье</a>
+                        <a href="#" class=" filter__input-btn">Бюстгалтеры</a>
+                        <a href="#" class=" filter__input-btn">Купальники</a>
+                        <a href="#" class=" filter__input-btn">Аксессуары</a>
+                        <a href="#" class=" filter__input-btn inputactivebtn">Боди</a>
+                     </div>
+                  </div>
+                  <div id="menuopened_1" class="filter__menu">
+                     <button id="menubtn_1" class="filter__menubtnopen ">Категории
+                        <img src="img/filter/filterarrow.svg" alt="">
+                     </button>
+                     <div id="filtermenuitems_1" class="filter__menu-items">
+                        <a href="#" class=" filter__input-btn">Нижнее белье</a>
+                        <a href="#" class=" filter__input-btn">Бюстгалтеры</a>
+                        <a href="#" class=" filter__input-btn">Купальники</a>
+                        <a href="#" class=" filter__input-btn">Аксессуары</a>
+                        <a href="#" class=" filter__input-btn inputactivebtn">Боди</a>
+                     </div>
+                  </div>
+
+
+
+
+
+                  <div class="filter__menu">
+                     <span class="filter__menu-namecat">Посадка</span>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox" checked>
+
+                           <span>Плотная чашка</span>
+
+                        </label>
+                     </div>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other  ">
+
+                           <input type="checkbox" checked>
+
+                           <span>Пуш-ап</span>
+
+                        </label>
+                     </div>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox" checked>
+
+                           <span>Мягкая чашка</span>
+
+                        </label>
+                     </div>
+
+
+
+
+                  </div>
+
+                  <div class="filter__menu">
+                     <span class="filter__menu-namecat">Форма</span>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox">
+
+                           <span>Планж</span>
+
+                        </label>
+                     </div>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox" checked>
+
+                           <span>Деми</span>
+
+                        </label>
+                     </div>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox">
+
+                           <span>Балконет</span>
+
+                        </label>
+                     </div>
+                     <div class="filter__menu-itemcheck">
+                        <label class="filter__checkbox-other">
+
+                           <input type="checkbox">
+
+                           <span>Фул кап</span>
+
+                        </label>
+                     </div>
+
+
+
+
+                  </div>
+
+
+
+
+                  <div class="filter__menumaxh">
+                     <div id="filtermenumaxh1" class="filter__menu menumaxh">
+                        <span class="filter__menu-namecat">Размер</span>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>B75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>C75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>C80</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>D75</span>
+
+                           </label>
+                        </div>
+
+
+
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>B75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>C75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>C80</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>D75</span>
+
+                           </label>
+                        </div>
+
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>B75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>C75</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>C80</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>D75</span>
+
+                           </label>
+                        </div>
+
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>C80</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>D75</span>
+
+                           </label>
+                        </div>
+
+
+
+
+
+
+
+
+                     </div>
+                     <button id="filtermorebtns1" class="filter__menumaxhbtns">
+                        <a id="filtermaxbtn1" class="filter__menumaxhbtn">
+                           Показать еще 10 вариантов
+                        </a>
+                        <a id="filtermaxbtn1" class="filter__menumaxhbtn">
+                           Скрыть
+                        </a>
+                     </button>
+
+                  </div>
+
+
+
+
+
+                  <div class="filter__menumaxh">
+                     <div id="filtermenumaxh2" class="filter__menu menumaxh">
+                        <span class="filter__menu-namecat">Цвет</span>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Красный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>Черный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Синий</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Бордовый</span>
+
+                           </label>
+                        </div>
+
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Красный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>Черный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Синий</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Бордовый</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Красный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox" checked>
+
+                              <span>Черный</span>
+
+                           </label>
+                        </div>
+                        <div class="filter__menu-itemcheck">
+                           <label class="filter__checkbox-other">
+
+                              <input type="checkbox">
+
+                              <span>Синий</span>
+
+                           </label>
+                        </div>
+
+
+
+                     </div>
+                     <button id="filtermorebtns2" class="filter__menumaxhbtns">
+                        <a id="filtermaxbtn2" class="filter__menumaxhbtn">
+                           Показать еще 7 вариантов
+                        </a>
+                        <a id="filtermaxbtn1" class="filter__menumaxhbtn">
+                           Скрыть
+                        </a>
+                     </button>
+
+                  </div>
+
+
+
+
+
+
+
+                  <div class="filter__menu-slider">
+                     <div class="filter__menu-namecat">Цена</div>
+
+                     <div class="filter__menu-slider" id="slider"></div>
+                     <div class="filter__menu-slider-text" id="slider-range">
+                        <input class="filter__menu-slider-input" type="text" id="min" value="0">
+                        <input class="filter__menu-slider-input" type="text" id="max" value="200">
+                     </div>
+                  </div>
+
+                  <div class="filter__menubtn">
+                     <input type="button" class="filter__btn inputapply">
+                     <label class="filter__menubtn-text btn-apply">Применить</label>
+                  </div>
+                  <div id="btn-clear" class="filter__menubtn">
+                     <input type="button" class="filter__btn inputclear">
+                     <label class="filter__menubtn-text btn-clear">Очистить</label>
+                  </div>
+
+
+
+
+
+
+
+
+
+               </div>
+            </div>
+
+
+
+            <div class="main__wrapper">
+               <div class="main__items-nav">
+                  <div class="main__filter-name">
+                     <h2 class="main__filter-title">Боди</h2>
+                     <div class="main__filter-subtitle">
+                        25 товаров
+                     </div>
+                  </div>
+                  <div class="main__filter-priceprio">
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           цена по возрастанию
+                        </div>
+                     </a>
+
+
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           цена по убыванию
+                        </div>
+                     </a>
+
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           популярные
+                        </div>
+                     </a>
+
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           сначала дешевые
+                        </div>
+                     </a>
+
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           сначала дорогие
+                        </div>
+                     </a>
+
+                     <a href="" class="main__filter-priceitem">
+                        <div class="main__filter-price-text">
+                           по отзывам
+                        </div>
+                     </a>
+                  </div>
+               </div>
+
+
+               <div class="main__items">
+                  <div class="main__items-inner">
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/1.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/2.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/3.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/4.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size ">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/5.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+
+
+                     <div class="main__item">
+                        <a href="cards.html" class="main__item-img">
+                           <img src="img/itemsImg/6.jpg" alt="">
+                        </a>
+                        <h3 class="main__item-title">
+                           Боди Enify bp плотная чашка балконет
+                        </h3>
+                        <div class="main__item-article">
+                           Артикул: 191809
+                        </div>
+                        <div class="main__item-price">
+                           <div class="main__item-priceold">
+                              102 BYN
+                           </div>
+                           <div class="main__item-pricenew">
+                              80
+                           </div>
+                           <div class="main__item-pricebyn">
+                              BYN
+                           </div>
+
+                        </div>
+                        <div class="main__item-size-wrapper">
+                           <button class="main__item-like">
+                              <img src="img/itemsImg/like.svg" alt="">
+                           </button>
+                           <div class="main__item-sizes">
+                              <div class="main__item-sizes-size ">
+                                 L
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 M
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 S
+                              </div>
+                              <div class="main__item-sizes-size">
+                                 XS
+                              </div>
+                           </div>
+                           <div class="main__item-size">
+                              Выбрать Размер
+                           </div>
+                        </div>
+
+                        <button class="main__item-btn">
+                           Купить
+                        </button>
+                     </div>
+
+
+
+
+
+
+                  </div>
+
+                  <button class="main__items-btnmore">
+                     показать еще
+                  </button>
+
+
+
+
+
+               </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+
+            <div class="footer__left">
+               <div class="footer__links">
+                  <div class="footer__links-left">
+                     <a href="" class="footer__link">Новинки</a>
+                     <a href="" class="footer__link">Нижнее белье</a>
+                     <a href="" class="footer__link">Бюстгалтеры</a>
+                     <a href="" class="footer__link">Пижамы</a>
+                     <a href="" class="footer__link">HOT NIGHT</a>
+                     <a href="" class="footer__link">Пляж</a>
+                     <a href="" class="footer__link">Аксессуары</a>
+                  </div>
+
+                  <div class="footer__links-right">
+                     <a href="" class="footer__link">Обратная связь</a>
+                     <a href="" class="footer__link">Способы доставки</a>
+                     <a href="" class="footer__link">Как вернуть товар</a>
+                     <a href="" class="footer__link">Где нас найти</a>
+                     <a href="" class="footer__link">Подарочные сертификаты</a>
+                     <a href="" class="footer__link">Популярные вопросы</a>
+                     <a href="" class="footer__link">Блог</a>
+                  </div>
+
+
+
+               </div>
+
+
+
+            </div>
+
+
+            <div class="footer__right">
+               <div class="footer__notification">
+                  Уведомлять о скидках
+               </div>
+               <form action="" class="footer__form">
+
+                  <input placeholder="Введите E-mail" type="text">
+
+                  <button type="button" class="footer__btn">
+                     <img src="img/footer/telegram.svg" alt="">
+                  </button>
+               </form>
+               <div class="footer__social">
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/instagram.svg" alt="">
+                  </a>
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/facebook.svg" alt="">
+                  </a>
+                  <a href="" class="footer__social-item">
+                     <img src="img/footer/vk.svg" alt="">
+                  </a>
+               </div>
+               <div class="footer__adress">
+                  <p>ТЦ Замок, пр-т Победителей 65, Минск</p>
+                  <p>Работаем ежедневно с 10:00 до 22:00</p>
+                  <p>+37529 789-01-25</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </footer>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
