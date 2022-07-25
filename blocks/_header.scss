@@ -308,10 +308,9 @@
    padding: 0;
    border: 0;
    background: none;
-   display: block;
    width: 30px;
    height: 25px;
-   display: flex;
+   display: none;
    justify-content: center;
    align-items: center;
    order: 2;
@@ -355,5 +354,8 @@
          transform: rotate(-45deg);
          background-color: #ff3d6c;
       }
+   }
+   @media (max-width: 1200px) {
+      display: flex;
    }
 }
