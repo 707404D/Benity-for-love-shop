@@ -449,12 +449,9 @@ p {
   padding: 0;
   border: 0;
   background: none;
-  display: block;
   width: 30px;
   height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -505,6 +502,13 @@ p {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-color: #ff3d6c;
+}
+@media (max-width: 1200px) {
+  .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav {
